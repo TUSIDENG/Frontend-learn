@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+      * {
+	      margin: 0px;
+		  padding: 0px;
+	  }
+      #logo {
+	      width: 780px;
+		  background: url(images/banner1_bg.jpg);
+		  margin: auto;
+	  }
+	  #daohang {
+	      width: 780px;
+		  list-style: none;
+		  border: 1px #000 solid;
+		  margin: auto;
+		  background: url("images/button1_bg.jpg") repeat-x;
+		  overflow: hidden; /*利用overflow属性清除浮动在某些情况下，可能会产生滚动条或阶段内容*/
+		  zoom: 1; /*兼容IE6, IE7*/
+	  }
+	  #daohang li {
+	      width: 80px;
+		  height: 32px;
+		  background: url("images/button1.jpg");
+		  float: left;
+		  text-align: center;
+		  line-height: 32px;
+		  cursor: pointer; /*光标移动上去变成手形*/
+	  }
+	  #daohang li:hover {
+	      background: url("images/button2.jpg");
+		  color: #fff;
+	  }
+  </style>
+ </head>
+ <body>
+  <div id="logo"><img src="images/banner1_left.jpg"></div>
+  <ul id="daohang">
+	 <li>首页导读</li>
+     <li>在线用户</li>
+     <li>查询网友</li>
+     <li>在线好友</li>
+     <li>好友名单</li>
+     <li>查看讯息</li>
+  </ul>
+ <script type="text/javascript">
+ </script>
+ </body>
+</html>
