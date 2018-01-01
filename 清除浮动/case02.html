@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+      * {
+	      margin: 0px;
+		  padding: 0px;
+	  }
+      #logo {
+	      width: 780px;
+		  background: url(images/banner1_bg.jpg);
+		  margin: auto;
+	  }
+	  #daohang {
+	      width: 780px;
+		  list-style: none;
+		  border: 1px #000 solid;
+		  margin: auto;
+		  background: url("images/button1_bg.jpg") repeat-x;
+	  }
+	  #daohang li {
+	      width: 80px;
+		  height: 32px;
+		  background: url("images/button1.jpg");
+		  float: left;
+		  text-align: center;
+		  line-height: 32px;
+		  cursor: pointer; /*光标移动上去变成手形*/
+	  }
+	  #daohang li:hover {
+	      background: url("images/button2.jpg");
+		  color: #fff;
+	  }
+	  /**
+	    *清除浮动
+		*结合使用:after伪类和内容声明在指定的现有内容的末尾添加新的内容
+		*此方法在大多数现代浏览器有效，但是在IE 6和更低版本中不起作用
+		*/
+		.clear:after {
+		    content: ".";
+			height: 0px;
+			visibility: hidden;
+			display: block;
+			clear: both;
+		}
+  </style>
+ </head>
+ <body>
+  <div id="logo"><img src="images/banner1_left.jpg"></div>
+  <ul id="daohang" class="clear">
+	 <li>首页导读</li>
+     <li>在线用户</li>
+     <li>查询网友</li>
+     <li>在线好友</li>
+     <li>好友名单</li>
+     <li>查看讯息</li>
+  </ul>
+ <script type="text/javascript">
+ </script>
+ </body>
+</html>
