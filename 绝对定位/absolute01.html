@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+      #branding {
+	      width: 70em; /*为相对定位的元素设置宽度和高度，可以兼容在IE 5, IE 6中，相对于”相对定位“的祖先元素的右边或底部设置绝对定位的框的位置，产生的会相对于画布定位的bug。*/
+		  height: 10em;
+		  position : relative;
+		  border: 1px #ff0000 solid;
+	  }
+
+	  #branding .tel {
+	      position: absolute; /*绝对定位是相对于距离最近的已经定位的祖先元素或者初始包含块，根据用户代理的不同，初始包含块可能是画布或HTML元素。*/
+		  right: 1em;
+		  bottom: 1em;
+		  text-align: right:
+	  }
+  </style>
+ </head>
+ <body>
+  <div id="branding">
+  	<p class="tel">Tel: 0845 838 6163</p>
+  </div>
+ <script type="text/javascript">
+ </script>
+ </body>
+</html>
