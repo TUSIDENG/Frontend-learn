@@ -42,7 +42,7 @@
 		*结合使用:after伪类和内容声明在指定的现有内容的末尾添加新的内容
 		*此方法在大多数现代浏览器有效，但是在IE 6和更低版本中不起作用
 		*/
-		.clear:after {
+		.clearfix:after {
 		    content: ".";
 			height: 0px;
 			visibility: hidden;
@@ -53,7 +53,7 @@
  </head>
  <body>
   <div id="logo"><img src="images/banner1_left.jpg"></div>
-  <ul id="daohang" class="clear">
+  <ul id="daohang" class="clearfix">
 	 <li>首页导读</li>
      <li>在线用户</li>
      <li>查询网友</li>
