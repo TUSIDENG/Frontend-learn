@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        /**
+          *水平居中
+          */
+        #child {
+            display :inline-block;
+            width: 600px;
+            height: 800px;
+            text-align: left;
+        }
+
+        #parent {
+            text-align: center;
+        }
+
+        fieldset {
+            margin: 1em 0;
+            padding: 1em;
+            border : 1px solid #ccc;
+            background-color: #f8f8f8;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        /**
+          *输入框样式
+          */
+        input[type="text"] {
+            width: 20em;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            background: #ffc;
+        }
+        textarea {
+            width: 100%;
+            height: 10em;
+        }
+
+        /**
+          *定制边框，让文本框和文本区域元素的外观保持一致。
+          */
+        input[type="text"], textarea {
+            border-top: 2px solid #999;
+            border-left: 2px solid #999;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 200px;
+            height: 50px;
+            border: 1px solid #989898;
+            background-color: #c5e063;
+            border-radius: 6px;
+            box-shadow: 2px 2px 2px #ccc;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #666;
+        }
+
+        input[type="radio"] {
+            margin: 1em;
+        }
+
+        .required {
+            font-size: 0.75em;
+            color: #760000;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+<div id="child">
+<h1>客户反馈</h1>
+<form>
+    <fieldset>
+        <legend>Your Contact Details</legend>
+        <div>
+            <label for="author">name<em class="required">(Required)</em></label>
+            <input type="text" name="author" id="author">
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="text" name="email" id="email">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Your feedback</legend>
+        <label for="feedback"></label>
+        <textarea name="feedback" id="feedback"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Remember me</legend>
+        <div>
+        <label for="remember-yes">
+            <input type="radio" id="remember-yes" name="remember" value="yes">
+            Yes
+        </label>
+        </div>
+        <div>
+            <label for="remember-no">
+                <input type="radio" id="remember-no" name="remember" value="no" checked>
+             No
+            </label>
+        </div>
+    </fieldset>
+    <div><input type="submit"></div>
+</form>
+</div>
+</div>
+</body>
+</html>
